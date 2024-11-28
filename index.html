@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salary Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1>Salary Calculator</h1>
+
+    <div id="ph">
+      <div id="ph2">
+        <p><b>DISCLAIMER:</b> This calculator assumes that :</p>
+        <ul>
+          <li>there are exactly <b>52 weeks</b> in a year</li>
+          <li><b>4.3˙ weeks</b> in a month</li>
+          <li>Only working during the weekdays <b>(260 weekdays)</b></li>
+        </ul>
+      </div>
+
+      <p>
+        Salary Amount per hour <input type="number" name="" id="salaryIn" />
+        <!-- per -->
+        <!-- <label for="">
+        <select name="time" id="">
+          <option value="">Hour</option>
+          <option value="">Daily</option>
+          <option value="'">Week</option>
+          <option value="'">Bi-week</option> -->
+        <!-- <option value="'">Semi-Monthly</option> -->
+        <!-- <option value="'">Monthly</option>
+          <option value="'">Yearly</option>
+        </select>
+      </label> -->
+      </p>
+
+      <p>Hours per day <input type="number" name="" id="hourIn" /></p>
+      <p>Days per week <input type="number" name="" id="dayIn" /></p>
+      <p>Holidays per year <input type="number" name="" id="holidayIn" /></p>
+      <p>Vacations days per year <input type="number" name="" id="vacIn" /></p>
+
+      <button id="calc">Calculate</button> <button id="clar">Clear</button>
+    </div>
+
+    <h1>Result</h1>
+
+    <table>
+      <tr>
+        <td></td>
+        <th>Unadjusted</th>
+        <th>
+          Holidays & vacation <br />
+          days adjusted
+        </th>
+      </tr>
+
+      <tr>
+        <td>Hourly</td>
+        <td><span id="output1">-----</span></td>
+        <td><span id="output6">-----</span></td>
+      </tr>
+      <tr>
+        <td>Daily</td>
+        <td><span id="output2">-----</span></td>
+        <td><span id="output7">-----</span></td>
+      </tr>
+      <tr>
+        <td>Weekly</td>
+        <td><span id="output3">-----</span></td>
+        <td><span id="output8">-----</span></td>
+      </tr>
+      <tr>
+        <td>Monthly</td>
+        <td><span id="output4">-----</span></td>
+        <td><span id="output9">-----</span></td>
+      </tr>
+      <tr>
+        <td>Yearly</td>
+        <td><span id="output5">-----</span></td>
+        <td><span id="output10">-----</span></td>
+      </tr>
+    </table>
+  </body>
+</html>
